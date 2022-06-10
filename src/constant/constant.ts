@@ -51,4 +51,8 @@ const TOKEN =
     EXPIRED_TOKEN:"Invalid or expired token"
 }
 
-export default {Auth,Redis,Program,USER,TOKEN,COURSE,EMAIL}
+const UNAUTHORIZED = 
+{
+    AUTHORIZED_REQUEST :"You are not authorized to access this resource"
+}
+export default {Auth,Redis,Program,USER,TOKEN,COURSE,EMAIL,UNAUTHORIZED}

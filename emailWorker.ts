@@ -8,8 +8,6 @@ const worker = new Worker('emailJob', async job => {
   if (job.name === 'emailJob') {
     
     await email.emailConfirmation(job.data);
-    // await email.emailConfirmation();
-
   }
 });
 
